@@ -1,6 +1,6 @@
 import fs from "fs";
-import _, { forEach } from "lodash";
-import { PSensing, PSensings, SensingBuilder } from "../models/builder";
+import _ from "lodash";
+import { PSensings, SensingBuilder } from "../models/builder";
 import {
   Human,
   IHuman,

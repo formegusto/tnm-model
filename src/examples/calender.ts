@@ -1,10 +1,7 @@
 import _ from "lodash";
 import { WorkCalender } from "../libs";
 
-export async function calenderTest() {
-  const cal = await WorkCalender.get(10, "직원 2");
-
+export async function calenderExample() {
+  const cal = await WorkCalender.get(9, "직원 1");
   console.log(cal.dayGroupScore);
-
-  return;
 }

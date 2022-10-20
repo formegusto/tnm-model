@@ -1,6 +1,5 @@
 import _ from "lodash";
 import { TNMModel } from ".";
-import { tnm } from "../../examples";
 import { TNMAnalyzerTable, TNMTable } from "./types";
 
 export interface ITNMAnalyzer {

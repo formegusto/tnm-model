@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { Date, Schema } from "mongoose";
+import { Schema } from "mongoose";
 import { ScheduleModel } from ".";
 
 export type ScheduleStatusType = "static" | "real-time" | "stop-observe";

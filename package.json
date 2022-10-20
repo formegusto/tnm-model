@@ -1,9 +1,7 @@
 {
   "name": "tnm-model",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/formegusto/tnm-model.git",
-  "author": "formegusto <formegusto@gmail.com>",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
     "@types/lodash": "^4.14.186",

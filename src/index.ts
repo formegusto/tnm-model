@@ -1,10 +1,10 @@
-import { saveExample } from "./examples/saveTest";
+import { calenderTest } from "./examples";
 import { dbConnect, dbDisconnect } from "./models/connect";
 
 (async function () {
   await dbConnect();
 
-  await saveExample();
+  await calenderTest();
 
   await dbDisconnect();
 })();

@@ -29,4 +29,10 @@ export class Human implements IHuman {
     if (humanDocs) return new Human(humanDocs.toObject());
     return;
   }
+
+  static async findById(id: Schema.Types.ObjectId | string) {
+    const humanDocs = await HumanModel.findById(id);
+    if (humanDocs) return new Human(humanDocs.toObject());
+    return;
+  }
 }

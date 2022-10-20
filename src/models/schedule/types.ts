@@ -39,4 +39,10 @@ export class Schedule implements ISchedule {
     if (scheduleDoc) return new Schedule(scheduleDoc.toObject());
     return;
   }
+
+  static async findById(id: Schema.Types.ObjectId | string) {
+    const scheduleDoc = await ScheduleModel.findById(id);
+    if (scheduleDoc) return new Schedule(scheduleDoc.toObject());
+    return;
+  }
 }

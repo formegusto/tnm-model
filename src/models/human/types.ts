@@ -35,4 +35,9 @@ export class Human implements IHuman {
     if (humanDocs) return new Human(humanDocs.toObject());
     return;
   }
+
+  static async getNameList() {
+    const humans = await HumanModel.find({});
+    return _.map(humans, ({ name }) => name);
+  }
 }

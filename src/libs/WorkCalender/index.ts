@@ -17,7 +17,9 @@ export class WorkCalender implements IWorkCalender {
   }
 
   get dayGroupScore() {
-    const days = _.map(this.sensings, ({ startTime }) => startTime.getDate());
+    const days = _.map(this.sensings, ({ startTime }) =>
+      startTime.getUTCDate()
+    );
     const scores = _.map(this.sensings, ({ score }) => score);
 
     const zipDatas = _.zip(days, scores);

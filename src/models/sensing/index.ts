@@ -12,6 +12,7 @@ const SensingSchema = new Schema<ISensing>(
   {
     timestamps: false,
     collection: "Sensing",
+    versionKey: false,
   }
 );
 

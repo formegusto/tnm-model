@@ -8,6 +8,7 @@ const HumanSchema = new Schema<IHuman>(
   {
     timestamps: false,
     collection: "Human",
+    versionKey: false,
   }
 );
 

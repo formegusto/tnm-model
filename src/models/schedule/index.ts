@@ -11,6 +11,7 @@ const ScheduleSchema = new Schema<ISchedule>(
   {
     timestamps: false,
     collection: "Schedule",
+    versionKey: false,
   }
 );
 

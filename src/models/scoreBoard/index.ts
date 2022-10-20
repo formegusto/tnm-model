@@ -10,6 +10,7 @@ const ScoreBoardSchema = new Schema<IScoreBoard>(
   {
     timestamps: false,
     collection: "ScoreBoard",
+    versionKey: false,
   }
 );
 

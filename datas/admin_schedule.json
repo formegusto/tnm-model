@@ -1,0 +1,32 @@
+[
+    {
+        "title": "출근 확인",
+        "startTime": 9,
+        "endTime": 10,
+        "statusType": "static"
+    },
+    {
+        "title": "업무 진행 중",
+        "startTime": 9,
+        "endTime": 12,
+        "statusType": "real-time"
+    },
+    {
+        "title": "점심시간",
+        "startTime": 12,
+        "endTime": 13,
+        "statusType": "stop-observe"
+    },
+    {
+        "title": "업무 진행 중",
+        "startTime": 13,
+        "endTime": 18,
+        "statusType": "real-time"
+    },
+    {
+        "title": "퇴근",
+        "startTime": 18,
+        "endTime": 9,
+        "statusType": "stop-observe"
+    }
+]

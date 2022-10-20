@@ -20,9 +20,13 @@ export class Human implements IHuman {
     return human;
   }
 
+  static async saveMany(humans: IHuman[]) {
+    return await HumanModel.insertMany(humans);
+  }
+
   static async findByName(name: string) {
     const humanDocs = await HumanModel.findOne({ name });
-    if (humanDocs) return new Human(humanDocs);
+    if (humanDocs) return new Human(humanDocs.toObject());
     return;
   }
 }

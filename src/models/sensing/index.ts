@@ -16,4 +16,7 @@ const SensingSchema = new Schema<ISensing>(
   }
 );
 
-export const SensingModel = model<typeof SensingSchema>("");
+export const SensingModel = model<typeof SensingSchema>(
+  "Sensing",
+  SensingSchema
+);

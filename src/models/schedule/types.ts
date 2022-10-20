@@ -31,4 +31,12 @@ export class Schedule implements ISchedule {
   static async saveMany(schedules: ISchedule[]) {
     return await ScheduleModel.insertMany(schedules);
   }
+
+  static async findByName(name: string) {
+    const scheduleDoc = await ScheduleModel.findOne({
+      name,
+    });
+    if (scheduleDoc) return new Schedule(scheduleDoc.toObject());
+    return;
+  }
 }

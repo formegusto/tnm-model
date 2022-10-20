@@ -27,4 +27,23 @@ export class ScoreBoard implements IScoreBoard {
   static async saveMany(scoreBoards: IScoreBoard[]) {
     return await ScoreBoardModel.insertMany(scoreBoards);
   }
+
+  static async find(minute: number) {
+    const scoreBoard = await ScoreBoardModel.findOne({
+      $and: [
+        {
+          startTime: {
+            $lte: minute,
+          },
+        },
+        {
+          endTime: {
+            $gte: minute,
+          },
+        },
+      ],
+    });
+
+    return scoreBoard!.score;
+  }
 }

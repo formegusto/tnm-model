@@ -1,10 +1,10 @@
 {
-    "emp_name": "직원 3",
+    "name": "직원 3",
     "sensings": [
         {
             "name": "출근 확인",
-            "start_time": "20221003T09:00",
-            "end_time": "20221003T10:00"
+            "startTime": "20221003T09:00",
+            "endTime": "20221003T10:00"
         }
     ]
 }

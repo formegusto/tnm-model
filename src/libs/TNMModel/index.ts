@@ -3,7 +3,9 @@ import { Human } from "../../models/types";
 import { getLinspace } from "../../utils";
 import { WorkCalender } from "../WorkCalender";
 import { TNMModelColumns } from "./common";
-import { NormTNMTable, TNMColumns, TNMTable } from "./types";
+import { TNMColumns, TNMTable } from "./types";
+
+export * from "./analyzer";
 
 export interface ITNMModel {
   month: number;

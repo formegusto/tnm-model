@@ -3,9 +3,9 @@ import { IScoreBoard } from "./types";
 
 const ScoreBoardSchema = new Schema<IScoreBoard>(
   {
-    startTime: { type: Date, required: true },
-    endTime: { type: Date, required: true },
-    score: { Type: Number, required: true },
+    startTime: { type: Number, required: true },
+    endTime: { type: Number, required: true },
+    score: { type: Number, required: true },
   },
   {
     timestamps: false,
@@ -14,7 +14,7 @@ const ScoreBoardSchema = new Schema<IScoreBoard>(
   }
 );
 
-export const SchoreBoardModel = model<typeof ScoreBoardSchema>(
+export const ScoreBoardModel = model<typeof ScoreBoardSchema>(
   "ScoreBoard",
   ScoreBoardSchema
 );

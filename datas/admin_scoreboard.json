@@ -1,0 +1,32 @@
+[
+    {
+        "startTime": 5,
+        "endTime": 10,
+        "score": 2
+    },
+    {
+        "startTime": 11,
+        "endTime": 20,
+        "score": 4
+    },
+    {
+        "startTime": 21,
+        "endTime": 30,
+        "score": 6
+    },
+    {
+        "startTime": 31,
+        "endTime": 40,
+        "score": 8
+    },
+    {
+        "startTime": 41,
+        "endTime": 50,
+        "score": 10
+    },
+    {
+        "startTime": 51,
+        "endTime": 9999,
+        "score": 15
+    }
+]

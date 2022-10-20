@@ -13,5 +13,8 @@ export async function tnmAnalyzer() {
   const month = 10;
   const analyzer = await TNMAnalyzer.get(month);
 
+  console.log(analyzer.tnmModel);
+  console.log(analyzer.scoreTable);
+
   return;
 }
